@@ -1,0 +1,5 @@
+require("aku.set")
+require("aku.remap")
+require("aku.packer")
+require("aku.treesitter")
+require("aku.lsp")

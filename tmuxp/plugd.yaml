@@ -1,0 +1,42 @@
+session_name: plugd
+windows:
+- focus: 'true'
+  layout: b4fe,166x51,0,0,1
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: neofetch
+  start_directory: /Users/aku-mac
+  window_name: sh
+- layout: b4ff,166x51,0,0,2
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+  start_directory: /Users/aku-mac/work/plugd/plugdWebBackend
+  window_name: node
+- layout: b500,166x51,0,0,3
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: 'docker-compose ps'
+  start_directory: /Users/aku-mac/work/plugd/plugdApi
+  window_name: php
+- layout: b501,166x51,0,0,4
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: 'nvm use 12'
+  start_directory: /Users/aku-mac/work/plugd/plugdWeb
+  window_name: menu
+- layout: b502,166x51,0,0,5
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: 'nvm use 12'
+  start_directory: /Users/aku-mac/work/plugd/plugd-admin
+  window_name: staff
