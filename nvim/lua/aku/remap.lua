@@ -2,7 +2,6 @@ local nnoremap = require("aku.keymap").nnoremap
 local inoremap = require("aku.keymap").inoremap
 
 nnoremap("<leader>pv", "<cmd>Ex<CR>")
-inoremap("jk", "<Esc>")
 
 -- Find files using Telescope
 nnoremap("<leader>ff", "<cmd>Telescope find_files<CR>")
