@@ -4,6 +4,7 @@ local on_attach = function()
     vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { buffer = 0 })
     vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, { buffer = 0 })
     vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { buffer = 0 })
+    vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, { buffer = 0 })
     -- vim.keymap.set("n", "gr", vim.lsp.buf.references, {buffer=0})
     vim.keymap.set("n", "gr", "<cmd>Telescope lsp_references<CR>", { buffer = 0 })
     vim.keymap.set("n", "ga", vim.lsp.buf.code_action, { buffer = 0 })
@@ -18,7 +19,7 @@ require('lspconfig').gopls.setup {
     on_attach = on_attach
 }
 
-require 'lspconfig'.sumneko_lua.setup {
+require('lspconfig').sumneko_lua.setup {
     on_attach = on_attach,
     settings = {
         Lua = {
@@ -40,4 +41,8 @@ require 'lspconfig'.sumneko_lua.setup {
             },
         },
     },
+}
+
+require('lspconfig').tsserver.setup {
+    on_attach = on_attach
 }
